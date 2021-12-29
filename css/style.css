@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'inter', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(9, 11, 26);
+  color: white;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#principal {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 350px;
+  background-color: rgb(27, 25, 56);
+  border-radius: 10px;
+}
+
+.info-section{
+  padding: 2rem 2rem;
+}
+
+.info-section h1:not(.stats h1) {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+
+span {
+  color: rgb(170, 92, 219);
+
+}
+
+.info-section p:not(.stats p) {
+  color: rgba(169, 160, 214, 0.8);
+  text-align: center;
+  font-size: .9rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  padding: 0rem 1.5rem;
+}
+
+.img-section {
+  width: 350px;
+  height: 260px;
+  background-image: url(../images/image-header-mobile.jpg);
+  background-size: cover;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+}
+
+.img-section::before {
+  content: "";
+  background-color: rgba(170, 92, 219);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .5;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.stats h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.stats p {
+  color: rgba(169, 160, 214, 0.8);
+  margin-top: .5rem;
+  font-size: .8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stats {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1140px) {
+  body {
+    width: 100%;
+    background-color: rgb(9, 11, 26);
+    color: white;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  #principal {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    width: 100%;
+  }
+
+  .info-section h1:not(.stats h1) {
+    margin-bottom: 0rem;
+    font-size: 2.7rem;
+    text-align: left;
+    padding: 2rem 4rem;
+  }
+
+  .info-section p:not(.stats p) {
+    color: rgba(169, 160, 214, 0.8);
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    padding: 0rem 4rem;
+  }
+
+
+  .img-section {
+    background-image: url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .img-section::before {
+    content: "";
+    background-color: rgba(170, 92, 219);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .5;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  .stats-container {
+    margin-top: 1.5rem;
+    min-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+  }
+
+  .stats h1 {
+    text-align: left;
+  }
+  
+  .stats p {
+    text-align: left;
+  }
+  
+
+}
+
